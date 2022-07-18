@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <title>J.O Clean Berlin GmbH</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="ARMO Baukonzept" />
+   <meta name="keywords" content="ARMO Baukonzept" />
+   <meta content="ARMO Baukonzept" name="author" />
+   <!-- App favicon -->
+   <link rel="shortcut icon" href="assets/images/favicon.png">
+   <!-- Owl Carousel -->
+   <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <!-- Navbar Start -->
+   <div class="navbar-custom" id="navbar">
+      <nav>
+         <div class="lg:container flex flex-wrap justify-between items-center">
+            <!-- Main Logo -->
+            <a href="index.html" class="flex lg:ml-0 ml-4">
+               <img class="logo m-auto" src="assets/images/logo.png" alt="logo">
+            </a>
+            <div class="flex items-center lg:order-2 lg:mr-0 pr-4">
+               <!-- Navbar Button -->
+               <a href="contact.html" class="btn bg-primary text-xs rounded-full font-500 text-white">
+                  Kontakt
+               </a>
+               <!-- Navbar Collapse Manu Button -->
+               <button data-collapse="menu-collapse" type="button" class="inline-flex items-center ml-3 text-sm text-white lg:hidden" aria-controls="menu-collapse" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <img class="inline-block" width="25" src="assets/images/icon/menu.svg" alt="menu">
+               </button>
+            </div>
+            <!-- Navbar Manu -->
+            <div class="justify-between items-center w-full lg:w-auto lg:flex hidden" id="menu-collapse">
+               <ul class="navbar-nav lg:h-auto h-[290px] lg:overflow-visible overflow-y-scroll lg:ml-0 ml-8" id="navbar-navlist">
+                  <li>
+                     <a href="index.html" class="nav-item">Home</a>
+                  </li>
+                  <li>
+                     <a href="about.html" class="nav-item">Über uns</a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)" class="nav-item">Leistungen</a>
+                  </li>
+                  <li>
+                     <a href="references.html" class="nav-item">Referenzen</a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)" class="nav-item">Karriere </a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)" class="nav-item">Leistungsanfragen </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </div>
+   <!-- Navbar End -->
+   <section class="banner inner-pages" id="home" style="background-image: linear-gradient(98deg, #0b102594 -2.3%, rgba(11, 16, 37, 0) 102.03%), url('assets/images/banner-2.png');">
+      <div class="container">
+         <div class="text-center">
+            <h1 class="text-4xl text-white mb-4">About J.O Clean Berlin GmbH</h1>
+            <h4 class="text-white text-xl">Buckower Chaussee 100, 12277 Berlin</h4>
+         </div>
+      </div>
+   </section>
+   <!-- Contact End -->
+   <section class="about-section">
+      <div class="container">
+         <div class="slideshow-container">
+
+            <div class="mySlides fade">
+               <img src="assets/images/clean.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+               <img src="assets/images/clean.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+               <img src="assets/images/clean.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"><img width="35" src="assets/images/icon/arrow-left.svg" alt="arrow"></a>
+            <a class="next" onclick="plusSlides(1)"><img width="35" src="assets/images/icon/arrow-right.svg" alt="arrow"></a>
+
+         </div>
+         <br>
+
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+
+
+
+         <div class="px-150">
+            <h1 class="text-3xl mb-4">Referenzen</h1>
+            <hr class="mb-4">
+            <p>Wir freuen uns, dass wir Ihr Interesse für unsere Referenzenübersicht geweckt haben. Aus Datenschutzgründen wollen wir die Namen und Objekte unserer Kunden nicht benennen. Gerne stellen wir Ihnen auf Anfrage unsere Referenzenübersicht zur Verfügung.</p>
+         </div>
+      </div>
+   </section>
+   <!-- Footer Start -->
+   <footer class="bg-footer pt-6">
+      <div class="container">
+         <a href="index.html"><img class="m-auto" width="160" src="assets/images/logo-footer.png" alt="logo"></a>
+         <hr class="mt-8">
+         <ul>
+            <li>
+               <a href="javascript:void(0)">Nutzungsbedingungen</a>
+            </li>
+            <li>
+               <a href="javascript:void(0)">Datenschutz</a>
+            </li>
+            <li>
+               <a href="javascript:void(0)">Impressum</a>
+            </li>
+         </ul>
+      </div>
+      <div class="footer-bottom">
+         <div class="container">
+            <div class="text-md text-gray-400 text-center">
+               &copy; J.O Clean Berlin GmbH
+               <script>document.write(new Date().getFullYear()) </script> All rights Reserved.
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Smooth-Scroll Javascript -->
+   <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+   <script src="assets/js/gumshoe.polyfills.min.js"></script>
+   <!-- Custom Javascript -->
+   <script src="assets/js/app.js"></script>
+
+   <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+         showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+         showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+         let i;
+         let slides = document.getElementsByClassName("mySlides");
+         let dots = document.getElementsByClassName("dot");
+         if (n > slides.length) { slideIndex = 1 }
+         if (n < 1) { slideIndex = slides.length }
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex - 1].style.display = "block";
+         dots[slideIndex - 1].className += " active";
+      }
+   </script>
+
+</body>
+
+</html>

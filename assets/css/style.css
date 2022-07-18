@@ -32,7 +32,8 @@ section {
 }
 
 .bg-gray {
-	background: #f8f9fb;;
+	background: #f8f9fb;
+	;
 }
 
 .text-gray {
@@ -101,7 +102,7 @@ section {
 	bottom: 60px;
 	color: #fff;
 	font-weight: 600;
-	font-size: 30px;
+	font-size: 45px;
 	line-height: 45px;
 }
 
@@ -215,7 +216,7 @@ section {
 .banner.inner-pages {
 	height: 300px;
 	padding: 150px 0;
-	background-position: bottom !important;	
+	background-position: bottom !important;
 }
 
 .about-section h1 {
@@ -256,8 +257,13 @@ section {
 	padding-right: 150px;
 }
 
-.mySlides {display: none}
-.about-section img {vertical-align: middle;}
+.mySlides {
+	display: none
+}
+
+.about-section img {
+	vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -267,7 +273,8 @@ section {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -301,7 +308,8 @@ section {
 	transition: background-color 0.6s ease;
 }
 
-.about-section .active, .about-section .dot:hover {
+.about-section .active,
+.about-section .dot:hover {
 	background-color: #13287B;
 }
 
@@ -312,13 +320,23 @@ section {
 }
 
 @keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-	.prev, .next,.text {font-size: 11px}
+
+	.prev,
+	.next,
+	.text {
+		font-size: 11px
+	}
 }
 
 footer hr {
