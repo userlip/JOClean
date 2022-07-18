@@ -217,12 +217,12 @@
    </section>
    <!-- Contact End -->
    <section class="contact-section" id="map">
-      <div class="container">
+      <form class="container" id="contact">
          <div class="text-center">
             <h1 class="text-3xl text-primary mb-3">Nehmen Sie Kontakt mit uns auf!</h1>
             <h4 class="font-400 text-gray">Buckower Chaussee 100, 12277 Berlin</h4>
          </div>
-         <h4 class="uppercase text-primary mt-4">Für Generelle Rückfragen, eine Referenzenübersicht oder Anfragen bitte Kontaktbogen ausfüllen</h4>
+         <h5 class="uppercase text-primary mt-4">Für Generelle Rückfragen, eine Referenzenübersicht oder Anfragen bitte Kontaktbogen ausfüllen</h5>
          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5">
             <div>
                <input type="text" name="name" id="name" class="form-control text-gray-900 text-sm rounded focus:ring-0 focus:border-gray-400 block w-full p-3" placeholder="Name*">
@@ -241,7 +241,7 @@
          </div>
          <p class="text-lg text-primary mb-3">Maps of J.O Clean Berlin GmbH</p>
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.7904475858363!2d13.379555115692698!3d52.41047397979353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a844de0c10ac2b%3A0x6243a2e63adb7b89!2sBuckower%20Chaussee%20100%2C%2012277%20Berlin%2C%20Germany!5e0!3m2!1sen!2s!4v1657449903010!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      </form>
    </section>
    <!-- Footer Start -->
    <footer class="bg-footer pt-6">
@@ -274,6 +274,30 @@
    <script src="assets/js/gumshoe.polyfills.min.js"></script>
    <!-- Custom Javascript -->
    <script src="assets/js/app.js"></script>
+
+   <script>
+      let contact_form = document.querySelector('contact');
+
+      contact_form.addEventListener('submit', function (event) {
+         event.preventDefault();
+
+         let inputs = Array.from(event.target.querySelectorAll('input, textarea'));
+
+         let normalized_inputs = {};
+
+         inputs.forEach((input) => {
+            normalized_inputs[input.name] = input.value
+         });
+
+         fetch("http://send.marin.sh/api/client/email/joclean", {
+            method: "POST",
+            body: JSON.stringify(normalized_inputs),
+            headers: {
+               "Content-type": "application/json; charset=UTF-8"
+            }
+         })
+      })
+   </script>
 
 </body>
 
