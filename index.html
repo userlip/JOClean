@@ -289,7 +289,7 @@
             normalized_inputs[input.name] = input.value
          });
 
-         fetch("http://send.marin.sh/api/client/email/joclean", {
+         fetch("https://send.marin.sh/api/client/email/joclean", {
             method: "POST",
             body: JSON.stringify(normalized_inputs),
             headers: {
